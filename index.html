@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina</title>
+    <link rel="icon" href="assets/img/icon.png">
+    <link rel="stylesheet" href="CSS/pag-principal.css">
+     <!--BIBLIOTECAS---------------------------------------------------------------->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+     <!--font awesome-->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"><!--aot (CSS)-->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><!--aot (JS)-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script><!--rellax (parallax)-->
+ 
+     
+</head>
+<body>
+    <header id="navbar" class="navbar">
+        <img src="assets/img/pagina principal/icon.png" alt="" id="logo">
+    
+        <p class="slogan-header">
+          Frete <span class="span-slogan">gratis</span> em todo Brasil
+        </p><!--slogan header-->
+    
+          <a href="list-product-page.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+     
+          <a href="#"><i class="fa-solid fa-heart"></i></a>
+     
+          <a href="list-product-page.html"><i class="fa-solid fa-bag-shopping"></i></a>
+     
+          <a class="icon" onclick="toggleFunction()"><i class="fa-solid fa-bars"></i></a>
+     
+          <button onclick="location.href='login-page.html'" class="login">LOGIN
+          </button><!--botão login-->
+    </header>
+    <section>
+        <div class="banner">
+        <img src="assets/img/back-shoe" alt="" id="background-shoe">
+        <div class="news-text">
+            <div class="texto-repeat">
+                <h1 class="news1">LANÇAMENTO</h1>
+                <h1 class="news2">LANÇAMENTO</h1>
+                <h1 class="news3">LANÇAMENTO</h1>
+                <h1 class="news4">LANÇAMENTO</h1>
+
+            </div>
+        </div>
+        <div class="main-text">
+            <h3>AIR JORDAN 1</h3>
+            <span class="main-text2">Downtown Dapper</span>
+        </div>
+        <p class="desc-sneaker">Air Jordan 1 Mid "Downtown Dapper": estilo urbano sofisticado com cabedal em couro premium. Detalhes sutis, como costuras contrastantes, adicionam classe. Entressola branca nítida para contraste moderno. Combina elegância, estilo e conforto. Perfeito para um visual urbano chique e autêntico.</p><!--descrição sneaker-->
+        <button class="confer-button" onclick="window.location.href='product-page.html'">CONFERIR</button>
+
+        </div>
+        <div class="sneakers2">
+            <div class="lebronimg">
+                <img src="assets/img/lebron19.jpg"  id="sneakers2">
+            </div>
+            <div class="text">
+                <span class="sneakers2-span">LEBRON</span>
+                <span class="sneakers2-span2">LEBRON</span>
+                <span class="sneakers2-span3">LEBRON</span>
+                <h1 class="sneakers2-h1">LEBRON 19</h1>
+                
+                <h3 class="sneakers2-h3">Apresentamos o incrível LeBron 19! Tênis de basquete com design inovador e aerodinâmico. Oferece suporte, flexibilidade e amortecimento responsivo para movimentos explosivos. Estilo agressivo e moderno para dominar as quadras com confiança. O LeBron 19 é a escolha perfeita para jogadores que buscam desempenho imbatível.</h3>
+            </div>
+        </div>
+          <div class="cupom">
+            <div class="img-cupom">
+                <img src="assets/img/cupom.jpg" alt="">
+            </div>
+            <div class="cupom-text">
+                <h1>USE O CUPOM <this class="style10">"Style10"</this>
+                    PARA GANHAR 10% DE DESCONTO
+                </h1>
+            </div>
+        </div>
+       </section>
+
+      <script>
+//           AOS.init();
+
+// var rellax = new Rellax('#sneakers2', {
+//     center: true
+
+// });
+
+rellax.refresh();
+        
+        function toggleFunction() {
+            var x = document.getElementById("navbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+      </script>
+</body>
+</html>

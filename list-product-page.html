@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tenis</title>
+    <link rel="icon" href="assets/img/icon.png">
+    <link rel="stylesheet" href="CSS/list-product-page.css">
+     <!--BIBLIOTECAS---------------------------------------------------------------->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+     <!--font awesome-->
+     <!----------------------------------------------------------------------------->
+ 
+</head>
+<body>
+       
+<header id="navbar" class="navbar">
+    <img src="assets/img/pagina principal/icon.png" alt="" id="logo" onclick="window.location.href='index.html'">
+
+    <p class="slogan-header">
+      Frete <span class="span-slogan">gratis</span> em todo Brasil
+    </p><!--slogan header-->
+
+      <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+ 
+      <a href="#"><i class="fa-solid fa-heart"></i></a>
+ 
+      <a href="list-product-page.html"><i class="fa-solid fa-bag-shopping"></i></a>
+ 
+      <a class="icon" onclick="toggleFunction()"><i class="fa-solid fa-bars"></i></a>
+ 
+      <button onclick="location.href='login-page.html'" class="login">LOGIN
+      </button><!--botão login-->
+  </header>
+    <section>
+
+        <div class="title">
+            <p>Sneakers</p>
+        </div>
+
+        <div class="shoes">
+         <div class="shoe" onclick="product()">
+            <img src="assets/img/airjordan1.jpg" alt="">
+            <span id="name">Air Jordan 1 High OG</span>
+            <hr>
+            <span>price: R$ 1699,99</span>
+        </div>
+        <div class="shoe">
+            <img src="assets/img/airflight.jpg" alt="">
+            <span id="name">air Flight Lite</span>
+            
+            <hr>
+            <span>price: R$ 1199,99</span>
+        </div>
+        <div class="shoe">
+            <img src="assets/img/airjordan37.jpg" alt="">
+            <span id="name">Air Jordan 37</span>
+            <hr>
+            <span>price: R$ 1699,99</span>
+        </div>
+        <div class="shoe">
+            <img src="assets/img/lebronnxxt.jpg" alt="">
+            <span id="name"> Lebron NXXT </span>
+            <hr>
+            <span>price: R$ 1299,99</span>
+        </div>
+        <div class="shoe">
+            <img src="assets/img/luka1.jpg" alt="">
+            <span id="name">Air Luka 1</span>
+            <hr>
+            <span>price: R$ 999,99</span>
+        </div>
+        <div class="shoe">
+            <img src="assets/img/airforce1.jpg" alt="">
+            <span id="name">Air Force 1 '07</span>
+            <hr>
+            <span>price: R$ 899,99</span>
+        </div>
+        <div class="shoe">
+            <img src="assets/img/dunkhigh.jpg" alt="">
+            <span id="name">Dunk high</span>
+            <hr>
+            <span>price: R$ 849,99</span>
+        </div>
+        <div class="shoe">
+            <img src="assets/img/airjordan37low.jpg" alt="">
+            <span id="name">Air Jordan 37 Low</span>
+            <hr>
+            <span>price: R$ 1699,99</span>
+        </div>
+        <div class="shoe">
+            <img src="assets/img/wmnsjordan1retro.jpg" alt="">
+            <span id="name">WMNS Jordan 1 Retro</span>
+            <hr>
+            <span>price: R$ 1699,99</span>
+        </div>
+        <div class="shoe">
+            <img src="assets/img/AirJordan1Retro.jpg" alt="">
+            <span id="name">Air Jordan 1 Retro High</span>
+            <hr>
+            <span>price: R$ 1699,99</span>
+        </div>
+        <div class="shoe">
+            <img src="assets/img/ja1.jpg" alt="">
+            <span id="name">Ja 1</span>
+            <hr>
+            <span>price: R$ 1099,99</span>
+        </div>
+        <div class="shoe">
+            <img src="assets/img/airmax1.jpg" alt="">
+            <span id="name">Air Max 1</span>
+            <hr>
+            <span>price: R$ 1199,99</span>
+        </div>
+        <div class="shoe">
+            <img src="assets/img/Women'sDunk LowLX.jpg" alt="">
+            <span id="name">Women's Dunk Low LX</span>
+            <hr>
+            <span>price: R$ 999,99</span>
+        </div>
+        <div class="shoe">
+            <img src="assets/img/NIKEAIrDUNKJUMBO.jpg" alt="">
+            <span id="name">Air Dunk Jumbo</span>
+            <hr>
+            <span>price: R$ 999,99</span>
+        </div>
+        </div>
+    </section>
+    
+
+    <script>
+        function principal(){
+            window.location.href = "pagina principal.html";
+        }
+
+        function product(){
+            window.location.href = "product-page.html";
+        }
+         function toggleFunction() {
+            var x = document.getElementById("navbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
+</body>
+</html>

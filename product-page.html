@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="icon" href="assets/img/icon.png">
+    <link rel="stylesheet" href="CSS/product-page.css">
+    <!--BIBLIOTECAS---------------------------------------------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <!--font awesome-->
+    <!----------------------------------------------------------------------------->
+
+</head>
+
+<body>
+    
+<header id="navbar" class="navbar">
+    <img src="assets/img/pagina principal/icon.png" alt="" id="logo" onclick="window.location.href='index.html'">
+
+    <p class="slogan-header">
+      Frete <span class="span-slogan">gratis</span> em todo Brasil
+    </p><!--slogan header-->
+
+      <a href="list-product-page.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+ 
+      <a href="#"><i class="fa-solid fa-heart"></i></a>
+ 
+      <a href="list-product-page.html"><i class="fa-solid fa-bag-shopping"></i></a>
+ 
+      <a class="icon" onclick="toggleFunction()"><i class="fa-solid fa-bars"></i></a>
+ 
+      <button onclick="location.href='login-page.html'" class="login">LOGIN
+      </button><!--botão login-->
+  </header>
+    <section>
+        <div class="showinfo">
+            <div class="main-photos">
+                <img src="assets/img/airjordan1.jpg" alt="" id="01">
+                <img src="assets/img/airjordan1-1.jpg" alt="">
+                <img src="assets/img/airjordan1-2.jpg" alt="">
+                <img src="assets/img/airjordan1-3.jpg" alt="">
+            </div>
+            <div class="info-aside">
+                <p class="name">Air Jordan 1 High OG</p>
+                <p class="title">Next Chapter</p>
+                <p class="price">R$ 1699,99</p>
+                <p class="info">Você não precisa de uma capa para voar - apenas seus AJ1s. Você sabe, aqueles vistos nos
+                    pés do Miles em “Spider-Man: Across the Spider-Verse”, exclusivamente nos cinemas em junho. Esta
+                    nova versão da icônica colorway de Chicago apresenta uma mistura de materiais, incluindo couro
+                    lustroso e camurça macia. O mundo está esperando, este é seu momento.</p>
+                <div class="tamanho">
+                    <p>Escolha o tamanho</p>
+                    <select name="Tamnhao" id="tamanho" aria-placeholder="tamanho">
+                        <option value="" selected>Tamanho</option>
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                        <option value="43">43</option>
+                    </select>
+                </div>
+                <div class="comprar">
+                    <button>comprar</button>
+                </div>
+            </div>
+        </div>
+        <div class="more-info"></div>
+    </section>
+    <script>
+         function toggleFunction() {
+            var x = document.getElementById("navbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
+</body>
+
+</html>

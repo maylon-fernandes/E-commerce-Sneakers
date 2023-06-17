@@ -1,0 +1,338 @@
+@import url('https://fonts.cdnfonts.com/css/monument-extended');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Monument Extended', sans-serif;
+}
+
+
+#navbar{
+    overflow:hidden;
+    background-color: #bb0f0f;
+    z-index: 100;
+    box-shadow: 0px 4px 10px #6969697e;
+    width: 1fr;
+    display: flex;
+    justify-self: end;
+    height: max-content;
+    font-weight: 30px;
+    font-size: 25px;
+    gap: 3rem;
+  }
+
+  #logo{
+    position: relative;
+    width: 15%;
+    margin-right: auto;
+  }
+
+  #navbar button{
+    background-color: #fff;
+    color: black;
+    border-radius: 15px;
+    border: solid 1px #fff;
+    width: 125px;
+    font-size: 25px;
+    transition: 0.3s all;
+    margin: 5px;
+  }
+  
+  #navbar button:hover {
+    background-color: black;
+    border: black;
+    color: #fff;
+}
+
+  
+  #navbar a {
+    float: left;
+    display: block;
+    color: #181818;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    
+    align-self: center;
+  }
+
+  #navbar a:hover {
+    color: #fff;
+}
+
+  #navbar a:not(:first-child) {
+    float: right;
+  }
+ 
+
+
+  p {
+    align-self: center;
+    font-family: 'Poppins', sans-serif;
+}
+  
+  .span-slogan{
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+  }
+
+  #navbar .icon {
+    display: none;
+  }
+  
+  #navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .sticky {
+    position: sticky;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+  
+  @media screen and (max-width: 900px) {
+   
+     
+  #logo{
+    position: relative;
+    width: 35%;
+    margin-right: auto;
+  }
+    #navbar a{
+      display: none;
+    }
+    #navbar p{
+        display: none;
+    }
+    #navbar button{
+        display: none;
+    }
+  
+    #navbar a.icon {
+      float: right;
+      display: block;
+    }
+  
+    #navbar.responsive {
+      position: relative;
+      flex-direction: column;
+    }
+  
+    #navbar.responsive a:not(:last-child) {
+      float: none;
+      display: block;
+      text-align: center;
+      
+    }
+    #navbar.responsive button {
+        float: none;
+        display: block;
+        align-self:center;
+      }
+  }
+
+section{
+    position: relative;
+
+}
+section .showinfo{
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+    width: 95%;
+}
+
+section .main-photos{
+    
+    display: flex;
+    flex-wrap: wrap;
+    place-content: space-evenly;
+    width: 50%;
+}
+
+section .main-photos img{
+    height: 350px;
+    margin: 10px;
+    transition: 0.5s ease-in-out;
+    border-radius: 10%;
+    box-shadow: 0px 5px 10px #a8a7a7;
+}
+
+
+section .main-photos img:is(:active, :focus){
+    transform: scale(2);
+    align-self: center;
+    display: flex;
+    justify-self: center;
+}
+
+section .info-aside{
+    height: 85vh;
+    /* border-radius: 5px; */
+    width: 37%;
+    background-color: #bb0f0f;
+    box-shadow: 0px 5px 10px #a8a7a7;
+}
+
+.info-aside .name{
+    margin-top: 20px;
+    font-size: 40px;
+   text-align: center;
+   font-weight: 200;
+}
+
+.info-aside .title{
+    font-size: 20px;
+    text-align: center;
+}
+
+.info-aside .price{
+    text-align: center;
+    font-weight: 100;
+    margin-bottom: 60px;
+}
+
+.info-aside .info{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.info-aside .tamanho{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.info-aside .tamanho select{
+    margin-left: 5px;
+    border-radius: 5px;
+}
+
+.info-aside .tamanho select:hover{
+    cursor: pointer;
+}
+
+.info-aside .comprar{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.info-aside .comprar button{
+    width: 300px;
+    background-color: #fff;
+    color: #000000;
+    font-size: 20px;
+    border-radius: 20px;
+    border: none;
+    height: 50px;
+}
+
+.info-aside .comprar button:hover{
+    color: #fff;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+     section .showinfo{
+        display: grid;
+        grid-template: 500px 700px 700px/ 1fr 1fr;
+        grid-gap:15px;
+     }  
+
+     section .showinfo .main-photos{
+         grid-area: 2/1/3/3;
+         width: 100%;
+         height: 700px;
+     
+     }
+section .showinfo .info-aside{
+    grid-area: 1/1/2/4;
+    height: 500px;
+    width: 100%;
+
+    border-radius: 5px;
+}
+
+.info-aside .comprar{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+section .main-photos img{
+    margin-top: 50px;
+    height: 320px;
+}
+
+.header-text  a {
+    display: none;
+  }
+
+.header-text  a.icon {
+    float: right;
+    display: block;
+  }
+
+  .header-text .responsive {
+    position: relative;
+  }
+
+  .header-text .responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+}
+
+
+@media screen and (max-width: 600px) {
+    section .showinfo .info-aside{
+        grid-area: 1/1/3/4;
+        height: 800px;
+    }
+    section .showinfo .main-photos{
+        grid-area: 3/1/3/3;
+        width: 100%;
+        height: 300px;
+        bottom: 100px;
+    }
+    section{
+        margin-bottom: 100px;
+    }
+    .info-aside .comprar{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    section .main-photos img{
+        height: 250px;
+    }
+section .main-photos img:is(:active, :focus){
+    transform: scale(1.1);
+    align-self: center;
+    display: flex;
+    justify-self: center;
+}
+}

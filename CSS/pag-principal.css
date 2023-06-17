@@ -1,0 +1,587 @@
+/* FONT */
+@import url('https://fonts.cdnfonts.com/css/monument-extended');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* CFG HTML */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Monument Extended', sans-serif;
+}
+
+body {
+    padding-top: 98px;
+    overflow-x: hidden;
+}
+
+
+/* HEADER */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #bb0f0f;
+    padding: 25px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    z-index: 10;
+    width: 100vw;
+}
+
+/* #navbar{
+    overflow:hidden;
+    background-color: #78F306;
+    z-index: 100;
+    box-shadow: 0px 4px 10px #6969697e;
+    width: 1fr;
+    display: flex;
+    justify-self: end;
+    height: max-content;
+    font-weight: 30px;
+    font-size: 25px;
+    gap: 3rem;
+  } */
+
+  #logo{
+    position: relative;
+    width: 15%;
+    margin-right: auto;
+  }
+
+  #navbar button{
+    background-color: #fff;
+    color: black;
+    border-radius: 15px;
+    border: solid 1px #fff;
+    width: 125px;
+    font-size: 25px;
+    transition: 0.3s all;
+    margin: 5px;
+  }
+  
+  #navbar button:hover {
+    background-color: black;
+    border: black;
+    color: #fff;
+}
+
+  
+  #navbar a {
+    float: left;
+    display: block;
+    color: #181818;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 23px;
+    margin-left: 20px;
+    margin-right: 20px;
+    align-self: center;
+  }
+
+  #navbar a:hover {
+    color: #fff;
+}
+
+  #navbar a:not(:first-child) {
+    float: right;
+  }
+ 
+
+
+  p {
+    font-size: 25px;
+    text-align: center;
+    align-self: center;
+    margin-right: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+  
+  .span-slogan{
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+  }
+
+  #navbar .icon {
+    display: none;
+  }
+  
+  #navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .sticky {
+    position: sticky;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+
+  .banner{
+    position: relative;
+    height: 105vh;
+    background-color: #bb0f0f;
+    overflow: hidden;
+    width: 100vw;
+  }
+
+#background-shoe{
+    width: 100%;
+
+}
+
+.news-text{
+    position: absolute;    
+    top:5%;
+}
+
+
+.news-text {
+    margin-left: 2%;
+    position: absolute;
+    top: 2%;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+}
+
+.news2,
+.news3,
+.news4 {
+    color: transparent;
+    -webkit-text-stroke: 2px #fff;
+    margin-top: -2%;
+    z-index: 1;
+}
+
+.news2 {
+    opacity: 30%;
+}
+
+.news3 {
+    opacity: 20%;
+}
+
+.news4 {
+    opacity: 10%;
+}
+
+
+.main-text {
+    margin-top: -52%;
+    color: #fff;
+    font-size: 65px;
+    margin-left: 2%;
+}
+
+.main-text2 {
+    position:relative;
+    font-size: 75px;
+    color: transparent;
+    -webkit-text-stroke: 2px #fff;
+}
+
+
+
+.desc-sneaker {
+    color: #fff;
+    width: 30%;
+    margin-top: 4%;
+    margin-left: 2%;
+    font-size: 18px;
+    text-align: left;
+}
+
+
+.confer-button{
+    position: absolute;
+    left: 40%;
+    bottom: 50px;
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+.confer-button:hover{
+    background-color: #181818;
+    color: #fff;
+}
+
+
+
+
+
+.sneakers2 {
+    height: 80vh;
+    position: relative;
+    width: 100vw;
+    align-items: center;
+    border-bottom: solid 2px #181818;
+}
+
+.sneakers2 .lebronimg{
+    position: relative;
+    width: 100vw;
+    left: 8%;
+    margin-top: 10%;
+}
+.sneakers2 .lebronimg img{
+    left: 0;
+    margin-top: 5%;
+    width: 600px;
+}
+
+.sneakers2-span {
+    position: absolute;
+    font-size: 60px;
+    top: 30%;
+    left: 55%;
+    font-size: 80px;
+    color: transparent;
+    -webkit-text-stroke: 2px black;
+}
+
+.sneakers2-span2 {
+    position: absolute;
+    font-size: 50px;
+    top: 23%;
+    left: 55%;
+    font-size: 80px;
+    color: transparent;
+    -webkit-text-stroke: 2px black;
+    opacity: 20%;
+}
+
+.sneakers2-span3 {
+    position: absolute;
+    font-size: 50px;
+    top: 16%;
+    left: 55%;
+    font-size: 80px;
+    color: transparent;
+    -webkit-text-stroke: 2px black;
+    opacity: 10%;
+}
+
+.sneakers2-h1 {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    background: linear-gradient(to bottom, #bb0f0f, #181818);
+    -webkit-background-clip: text;
+    /* Safari, Chrome, Opera */
+    -moz-background-clip: text;
+    /* Firefox */
+    background-clip: text;
+    color: transparent;
+    font-size: 100px;
+}
+
+
+.sneakers2-h3 {
+    position: absolute;
+    width: 600px;
+    left: 50%;
+    top: 60%;
+}
+
+.cupom{
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cupom .img-cupom{
+    width: 500px;
+    align-self: flex-end;
+}
+
+.cupom .cupom-text{
+    width: 500px;
+    font-size: 30px;
+}
+
+.cupom .cupom-text .style10{
+    color: #bb0f0f;
+}
+
+
+
+
+
+@media screen  and (max-width: 1200px){
+   .banner{
+    height: 85vh;
+   }
+
+    
+.news-text {
+    top: 3%;
+    font-size: 35px;
+}
+
+ 
+.main-text {
+    margin-top: -46%;
+    font-size: 50px;
+}
+
+.main-text2{
+    font-size: 35px;
+}
+
+.desc-sneaker {
+    color: #fff;
+    width: 48%;
+    margin-top: 4%;
+    margin-left: 2%;
+    font-size: 18px;
+}
+
+
+.sneakers2 {
+    padding-left: 40px;
+    height: 110vh;
+}
+
+.sneakers2 .lebronimg {
+    left: 100px;
+}
+
+
+.sneakers2-h1 {
+    left: 13%;
+    font-size: 70px;
+}
+
+
+
+.sneakers2-span{
+    left: 16%;
+    top: 73%;
+}
+
+
+.sneakers2-span2{
+    
+    left: 16%;
+    top: 77%;
+}
+
+
+.sneakers2-span3{
+
+    left: 16%;
+    top: 80%;
+}
+
+.sneakers2-h3 {
+    top: 53%;
+    left: 13%;
+    font-size: 20px;
+}
+
+}
+
+
+  
+  @media screen and (max-width: 900px) {
+    header {
+        top: 0;
+    }
+     
+  #logo{
+    position: relative;
+    width: 35%;
+    margin-right: auto;
+  }
+    #navbar a{
+      display: none;
+    }
+    #navbar p{
+        display: none;
+    }
+    #navbar button{
+        display: none;
+    }
+  
+    #navbar a.icon {
+      float: right;
+      display: block;
+    }
+  
+    #navbar.responsive {
+      position: absolute;
+      flex-direction: column;
+    }
+  
+    #navbar.responsive a:not(:last-child) {
+      float: none;
+      display: block;
+      text-align: center;
+      
+    }
+    #navbar.responsive button {
+        float: none;
+        display: block;
+        align-self:center;
+      }
+  }
+
+   
+  @media screen and (max-width: 600px) {
+
+    body{
+        width: 100vw;
+    }
+
+    .banner{
+        height: 70vh;
+    }
+      
+.news-text {
+    top: 3%;
+    font-size: 15px;
+}
+
+ 
+.main-text {
+    margin-top: -46%;
+    font-size: 20px;
+}
+
+.main-text2{
+    font-size: 20px;
+}
+
+.desc-sneaker {
+    width: 80%;
+    font-size: 15px;
+}
+
+
+.confer-button{
+    bottom: 10px;
+    left: 25%;
+}
+
+
+
+.sneakers2 .lebronimg {
+    top: 60px;
+    left: 0px;
+}
+
+
+    .sneakers2 {
+        width:10vw;
+        left: 20px;
+        padding-left: 40px;
+        border-bottom: none;
+    }
+
+    .sneakers2 .lebronimg{
+        width: 300px;
+    }
+
+    .sneakers2 .lebronimg img{
+        width: 100%;
+    }
+    
+
+.sneakers2-h1 {
+    width: 300px;
+    top: 40%;
+    left: 40px;
+    font-size: 40px;
+}
+
+
+
+.sneakers2-span{
+    font-size: 40px;
+    left: 60px;
+    top: 63%;
+}
+
+
+.sneakers2-span2{
+    font-size: 40px;
+    left: 60px;
+    top: 68%;
+}
+
+
+.sneakers2-span3{    
+    font-size: 40px;
+    left: 60px;
+    top: 73%;
+}
+
+
+.sneakers2-h3 {
+    top: 46%;
+    left: 40px;
+    width: 300px;
+    font-size: 10px;
+    text-align:center;
+}
+
+
+
+
+.cupom{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.cupom .img-cupom img{
+    width: 200px;
+    margin-left: 50%;
+    transform: translate(-13%);
+}
+
+.cupom .cupom-text{
+    width: 200px;
+    font-size: 20px;
+}
+
+  }
+  
+  @media screen and (max-width: 380px) {
+    
+
+.sneakers2 .lebronimg {
+    top: 60px;
+    left: 10px;
+}
+
+
+    .sneakers2 {
+        width:10vw;
+        left: -20px;
+        padding-left: 40px;
+        border-bottom: none;
+    }
+
+    .sneakers2 .lebronimg{
+        width: 250px;
+    }
+  }
